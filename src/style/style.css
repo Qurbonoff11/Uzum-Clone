@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f0f2f5;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0rem;
+}
+.header .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0rem;
+}
+.header .container .location-box {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.header .container .location-box .location {
+  color: #000;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+.header .container .location-box .location .map-pin {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.header .container .location-box .location .arr-down {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.header .container .location-box .delivery-point a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .container .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+.header .container .links li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .container .links li .purple {
+  color: #7f4dff;
+  transition: all 0.3s ease-in-out;
+}
+.header .container .links li .purple:hover {
+  color: #7000ff;
+}
+.header .container .links .lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .container .links .lang .uzbFlag {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-image: url("../assets/img/uzbFlag.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

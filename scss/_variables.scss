@@ -1,0 +1,25 @@
+@use "./mixins" as *;
+@use "./roots" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

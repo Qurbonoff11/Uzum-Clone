@@ -1,0 +1,83 @@
+@use "../../../roots" as *;
+@use "../../../mixins" as *;
+
+.header {
+  width: 100%;
+  height: 2.5rem;
+  background-color: $bg-white-f0;
+  font-family: $inter;
+  @include flexBox(space-between, center, row, 0rem);
+  .container {
+    width: 100%;
+    height: 100%;
+    @include flexBox(space-between, center, row, 0rem);
+
+    .location-box {
+      display: flex;
+      @include flexBox(space-between, center, row, 1.5rem);
+
+      .location {
+        color: $txt-dark;
+        font-size: $fs-14;
+        font-family: $inter;
+        font-weight: $fw-500;
+        @include flexBox(center, center, row, 5px);
+
+        .map-pin {
+          font-size: $fs-20;
+          font-weight: $fw-400;
+          color: $bg-dark;
+        }
+        .arr-down {
+          font-size: $fs-20;
+          font-weight: $fw-400;
+          color: $bg-dark;
+        }
+      }
+
+      .delivery-point {
+        a {
+          color: $txt-dark;
+          font-size: $fs-14;
+          font-weight: $fw-500;
+        }
+      }
+    }
+
+    .links {
+      @include flexBox(center, center, row, 1.2rem);
+      li {
+        a {
+          color: $txt-dark;
+          font-size: $fs-14;
+          font-weight: $fw-500;
+        }
+        .purple {
+          color: $bg-purple;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $bg-purple-10;
+          }
+        }
+      }
+
+      .lang {
+        @include flexBox(center, center, row, 5px);
+
+        .uzbFlag {
+          width: 1.3rem;
+          height: 1.3rem;
+          background-image: url("../assets/img/uzbFlag.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        color: $txt-dark;
+        font-size: $fs-14;
+        font-weight: $fw-500;
+      }
+    }
+  }
+}
