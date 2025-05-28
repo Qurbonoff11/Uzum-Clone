@@ -2,7 +2,12 @@
   "dependencies": {
     "pug-cli": "^1.0.0-alpha6"
   },
+
   "devDependencies": {
     "sass": "^1.89.0"
+  },
+  "scripts": {
+    "sass": "npx sass --watch ./scss/_style.scss:./src/style/style.css",
+    "pug": "pug -w ./pug/index.pug -o ./src/html -P"
   }
 }

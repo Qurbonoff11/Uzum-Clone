@@ -1,0 +1,99 @@
+@use "../../../roots" as *;
+@use "../../../mixins" as *;
+
+nav{
+  width: 100%;
+  height: 4rem;
+  background-color: $bg-white;
+  @include flexBox(center, center, row, 0rem);
+
+  .container{
+    width: 100%;
+    height: 100%;
+    @include flexBox(space-between, center, row, 2rem);
+
+    .uzum-logo{
+      height: 1.8rem;
+    }
+    .navbar-forms{
+      width: 100%;
+      height: 70%;
+      @include flexBox(space-between, center, row, .5rem);
+
+      .cotalog{
+        // @include flexBox(center, center, row, 0rem);
+        height: 100%;
+        padding: .5rem 1.5rem;
+        border: none;
+        background-color: $bg-purple-1;
+        color: $txt-purple-10;
+        font-size: 1rem;
+        font-weight: $fw-500;
+        border-radius: .3rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+          background-color: $bg-purple-2;
+        }
+
+        i{
+          font-size: 1.3rem;
+        }
+      }
+      .input-box{
+        width: 520px;
+        height: 100%;
+        border: 2px solid $bg-gray-1;
+        border-radius: .3rem;
+        padding: 0 .1rem;
+        @include flexBox(space-between, center, row, 0rem);
+        // background-color: aqua;
+
+        input{
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          border: none;
+          outline: none;
+        }
+        button{
+          height: 90%;
+          padding: .8rem 1.5rem;
+          border: none;
+          background-color: $bg-gray-1;
+          color: $txt-dark;
+          font-size: 1rem;
+          font-weight: $fw-500;
+          border-radius: .3rem;
+          cursor: pointer;
+          @include flexBox(center, center, row, 0rem);
+
+          &:hover{
+            background-color: $bg-gray-2;
+          }
+        }
+      }
+      .right-bar{
+        @include flexBox(center, center, row, 1rem);
+        button{
+          height: 100%;
+          padding: .8rem 1.5rem;
+          border: none;
+          background-color: $bg-white;
+          color: $txt-dark;
+          font-size: 1rem;
+          font-weight: $fw-500;
+          border-radius: .3rem;
+          cursor: pointer;
+          @include flexBox(center, center, row, 0rem);
+          transition: all 0.3s ease-in-out;
+
+          &:hover{
+            background-color: $bg-gray-2;
+          }
+        }
+      }
+    }
+  }
+}

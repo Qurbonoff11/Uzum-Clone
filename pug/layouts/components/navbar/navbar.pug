@@ -1,0 +1,26 @@
+nav
+  .container
+    a(href="#")
+      img(src="../assets/img/uzumLogo.png", alt="Uzum Market Logo" class="uzum-logo")
+    .navbar-forms
+      button.cotalog
+        i.ri-archive-stack-line
+        | Katalog
+      .input-box
+        input(type="text")
+        button
+          i.ri-search-2-line
+      ul.right-bar
+        -
+          const items = [
+            { icon: 'ri-user-line', text: 'Kirish' },
+            { icon: 'ri-heart-line', text: 'Saralangan' },
+            { icon: 'ri-shopping-basket-line', text: 'Savat' }
+          ]
+
+        each item in items
+          li
+            button
+              i(class=item.icon)
+              |
+              = item.text
