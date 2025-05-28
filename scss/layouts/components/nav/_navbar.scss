@@ -53,6 +53,7 @@ nav{
         input{
           width: 100%;
           height: 100%;
+          font-size: 1.5rem;
           padding: 0 1rem;
           border: none;
           outline: none;
@@ -68,6 +69,7 @@ nav{
           border-radius: .3rem;
           cursor: pointer;
           @include flexBox(center, center, row, 0rem);
+          transition: all .5s ease-in-out;
 
           &:hover{
             background-color: $bg-gray-2;
