@@ -94,7 +94,74 @@ nav{
           &:hover{
             background-color: $bg-gray-2;
           }
+          i{
+            font-size: 1.3rem;
+          }
         }
+      }
+    }
+  }
+}
+
+.navbar{
+  width: 100%;
+  height: 4rem;
+  background-color: $bg-white;
+  font-family: $inter;
+  @include flexBox(center, center, row, 0rem);
+
+  .container{
+    width: 100%;
+    height: 100%;
+    @include flexBox(space-between, center, row, 0rem);
+
+    .neww{
+      a{
+        color: $txt-dark;
+        font-size: $fs-14;
+        @include flexBox(center, center, row, 5px);
+        img{
+          height: 1.5rem;
+        }
+      }
+    }
+
+    ul{
+      @include flexBox(space-between, center, row, 1.2rem);
+      li{
+        position: relative;
+        a{
+          color: $txt-dark;
+          font-size: $fs-14;
+          @include flexBox(center, center, row, .1rem);
+          transition: all 0.3s ease-in-out;
+
+          &::after{
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $bg-purple;
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover{
+            color: $bg-purple;
+
+            &::after{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .more{
+      a{
+        color: $txt-dark;
+        font-size: $fs-14;
+        @include flexBox(center, center, row, 5px);
       }
     }
   }

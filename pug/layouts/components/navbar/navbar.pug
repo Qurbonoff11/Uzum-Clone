@@ -24,3 +24,35 @@ nav
               i(class=item.icon)
               |
               = item.text
+
+.navbar
+  .container
+    .neww
+      a(href="")
+        img(src="../assets/img/starIcon.png", alt="alt" class="starIcon")
+        | Hafta Tovarlari
+
+    ul
+      -
+        const textContent = [
+          { content: "Elektronika" },
+          { content: "Maishiy texnika" },
+          { content: "Kiyim" },
+          { content: "Poyabzal" },
+          { content: "Aksesuarlar" },
+          { content: "G'zallik va parvarish" },
+          { content: "Salomatlik" },
+          { content: "Uy ro'zg'or buyumlari" },
+          { content: "Qurilish va ta'mirlash" }
+        ]
+
+      each item in textContent
+        li
+          a(href="#")
+            |&nbsp;
+            = item.content
+
+    .more
+      a(href="#")
+        | Yana
+        i.ri-arrow-down-s-line
