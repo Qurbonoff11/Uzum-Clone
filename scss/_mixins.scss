@@ -5,3 +5,9 @@
   flex-direction: $direction;
   gap: $gap;
 }
+
+@mixin bgPosition ($bg-position, $bg-repeat, $bg-size) {
+  background-position: $bg-position;
+  background-repeat: $bg-repeat;
+  background-size: $bg-size;
+}

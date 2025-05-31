@@ -6,7 +6,9 @@
     <title>Uzum Market - Clone</title>
     <meta name="description" content="Uzum market">
     <meta name="keywords" content="uzum market">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="../assets/img/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css">
   </head>
   <body>
@@ -36,15 +38,15 @@
           </div>
           <ul class="right-bar">
             <li>
-              <button><i class="ri-user-line"></i>Kirish
+              <button calss="logInBtn"><i class="ri-user-line"></i>Kirish
               </button>
             </li>
             <li>
-              <button><i class="ri-heart-line"></i>Saralangan
+              <button calss="sortedBtn"><i class="ri-heart-line"></i>Saralangan
               </button>
             </li>
             <li>
-              <button><i class="ri-shopping-basket-line"></i>Savat
+              <button calss="basketBtn"><i class="ri-shopping-basket-line"></i>Savat
               </button>
             </li>
           </ul>
@@ -69,7 +71,24 @@
       </div>
     </div>
     <main>
-      <section></section>
+      <div class="section-1">
+        <div class="container">
+          <div class="slider">
+            <div class="slider">
+              <div class="slides" id="slides">
+                <div class="slide slide-1"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+                <div class="slide slide-4"></div>
+                <div class="slide slide-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="../js/script.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

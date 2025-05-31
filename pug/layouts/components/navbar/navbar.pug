@@ -13,14 +13,14 @@ nav
       ul.right-bar
         -
           const items = [
-            { icon: 'ri-user-line', text: 'Kirish' },
-            { icon: 'ri-heart-line', text: 'Saralangan' },
-            { icon: 'ri-shopping-basket-line', text: 'Savat' }
+            { icon: 'ri-user-line', text: 'Kirish', class: 'logInBtn'},
+            { icon: 'ri-heart-line', text: 'Saralangan', class: 'sortedBtn'},
+            { icon: 'ri-shopping-basket-line', text: 'Savat', class: 'basketBtn'}
           ]
 
         each item in items
           li
-            button
+            button(calss=item.class)
               i(class=item.icon)
               |
               = item.text
@@ -45,7 +45,6 @@ nav
           { content: "Uy ro'zg'or buyumlari" },
           { content: "Qurilish va ta'mirlash" }
         ]
-
       each item in textContent
         li
           a(href="#")

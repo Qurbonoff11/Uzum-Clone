@@ -80,7 +80,7 @@ nav{
         @include flexBox(center, center, row, 1rem);
         button{
           height: 100%;
-          padding: .8rem 1.5rem;
+          padding: .8rem 1.1rem;
           border: none;
           background-color: $bg-white;
           color: $txt-dark;
@@ -88,7 +88,7 @@ nav{
           font-weight: $fw-500;
           border-radius: .3rem;
           cursor: pointer;
-          @include flexBox(center, center, row, 0rem);
+          @include flexBox(space-around, center, row, 0.3rem);
           transition: all 0.3s ease-in-out;
 
           &:hover{
